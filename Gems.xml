@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gems>
+    <gem name="Diamond">
+        <origin>Australia</origin>
+        <preciousness>precious</preciousness>
+        <visual>
+            <color>bluish white</color>
+            <clarity>87.0</clarity>
+            <cut>6</cut>
+        </visual>
+        <carat>8</carat>
+    </gem>
+    <gem name="Diamond">
+        <origin>Canada</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>white</color>
+            <clarity>45.7</clarity>
+            <cut>6</cut>
+        </visual>
+        <carat>12</carat>
+    </gem>
+    <gem name="Diamond">
+        <origin>Canada</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>yellow</color>
+            <clarity>75.5</clarity>
+            <cut>15</cut>
+        </visual>
+        <carat>12</carat>
+    </gem>
+    <gem name="Rubin">
+        <origin>Australia</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>red</color>
+            <clarity>67.5</clarity>
+            <cut>6</cut>
+        </visual>
+        <carat>20</carat>
+    </gem>
+    <gem name="Sapphire">
+        <origin>India</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>blue</color>
+            <clarity>38.5</clarity>
+            <cut>7</cut>
+        </visual>
+        <carat>7</carat>
+    </gem>
+    <gem name="Emerald">
+        <origin>India</origin>
+        <preciousness>precious</preciousness>
+        <visual>
+            <color>green</color>
+            <clarity>54.4</clarity>
+            <cut>13</cut>
+        </visual>
+        <carat>10</carat>
+    </gem>
+    <gem name="Rubin">
+        <origin>Australia</origin>
+        <preciousness>precious</preciousness>
+        <visual>
+            <color>red</color>
+            <clarity>33.0</clarity>
+            <cut>4</cut>
+        </visual>
+        <carat>2</carat>
+    </gem>
+    <gem name="Rubin">
+        <origin>Australia</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>blue</color>
+            <clarity>23.6</clarity>
+            <cut>13</cut>
+        </visual>
+        <carat>5</carat>
+    </gem>
+</gems>
