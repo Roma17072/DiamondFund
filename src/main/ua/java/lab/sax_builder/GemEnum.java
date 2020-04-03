@@ -1,3 +1,5 @@
+package lab.sax_builder;
+
 public enum GemEnum {
     GEMS("gems"),
     GEM("gem"),

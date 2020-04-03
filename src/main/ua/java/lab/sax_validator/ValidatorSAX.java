@@ -1,5 +1,6 @@
-import org.xml.sax.SAXException;
+package lab.sax_validator;
 
+import org.xml.sax.SAXException;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;

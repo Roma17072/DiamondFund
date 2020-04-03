@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gems>
+    <lab.mvc.Gem name="Rubin">
+        <origin>Australia</origin>
+        <preciousness>semiprecious</preciousness>
+        <visual>
+            <color>red</color>
+            <clarity>67.5</clarity>
+            <cut>6</cut>
+        </visual>
+        <carat>20</carat>
+    </lab.mvc.Gem>
+    <lab.mvc.Gem name="Diamond">
+        <origin>Canada</origin>
+        <preciousness>precious</preciousness>
+        <visual>
+            <color>white</color>
+            <clarity>45.7</clarity>
+            <cut>4</cut>
+        </visual>
+        <carat>10</carat>
+    </lab.mvc.Gem>
+    <lab.mvc.Gem name="Diamond">
+        <origin>Australia</origin>
+        <preciousness>precious</preciousness>
+        <visual>
+            <color>bluish white</color>
+            <clarity>87.0</clarity>
+            <cut>6</cut>
+        </visual>
+        <carat>12</carat>
+    </lab.mvc.Gem>
+</gems>

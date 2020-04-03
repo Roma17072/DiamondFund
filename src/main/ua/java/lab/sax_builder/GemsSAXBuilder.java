@@ -1,8 +1,11 @@
+package lab.sax_builder;
+
+
+import lab.mvc.Gem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -14,11 +17,11 @@ import java.util.Comparator;
 public class GemsSAXBuilder extends DefaultHandler {
 
     public static ArrayList<Gem> gemsSAXBuilder(String filename) {
-        Logger logger = LogManager.getLogger("java.lab.ua");
+        Logger logger = LogManager.getLogger("ua.java.lab");
         SAXParserFactory factory = SAXParserFactory.newInstance();
         factory.setNamespaceAware(true);
         GemsHandler gemsHandler = new GemsHandler();
-        ArrayList<Gem> gems = null;
+        ArrayList<Gem> gems = new ArrayList<>();
         try {
             SAXParser parser = factory.newSAXParser();
             parser.parse(new File(filename), gemsHandler);

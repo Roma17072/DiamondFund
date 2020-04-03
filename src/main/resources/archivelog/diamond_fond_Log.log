@@ -1,2 +1,119 @@
-2020-04-01 12:06:46 FATAL java.lab.ua [main] 61 : 17 - Element type "carat10" must be followed by either attribute specifications, ">" or "/>".
-2020-04-01 12:07:38 FATAL java.lab.ua [main] 71 : 16 - Element type "carat2" must be followed by either attribute specifications, ">" or "/>".
+2020-04-02 21:23:50 ERROR java.lab.ua [main] I/O error: D:\JC\learnExamples\Diamond fund\lab.mvc.Gems.xml (Не удается найти указанный файл)
+2020-04-02 21:25:57 ERROR java.lab.ua [main] I/O error: D:\JC\learnExamples\Diamond fund\lab.mvc.Gems.xml (Не удается найти указанный файл)
+2020-04-02 21:25:58 ERROR java.lab.ua [main] Impossible transform file lab.mvc.Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\lab.mvc.Gems.xsl (Не удается найти указанный файл)
+2020-04-02 21:28:21 ERROR java.lab.ua [main] Impossible transform file Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\lab.mvc.Gems.xsl (Не удается найти указанный файл)
+2020-04-02 23:35:02 ERROR ua.java.lab [main] I/O error: D:\JC\learnExamples\Diamond fund\ua.java.lab.mvc.Gems.xml (Не удается найти указанный файл)
+2020-04-02 23:35:02 ERROR ua.java.lab [main] Impossible transform file ua.java.lab.mvc.Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\Gems.xsl (Не удается найти указанный файл)
+2020-04-02 23:35:03 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:35:03 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:38:50 ERROR ua.java.lab [main] I/O error: D:\JC\learnExamples\Diamond fund\ua\java\lab\mvc\Gems.xml (Системе не удается найти указанный путь)
+2020-04-02 23:38:50 ERROR ua.java.lab [main] Impossible transform file ua/java/lab/mvc/Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\Gems.xsl (Не удается найти указанный файл)
+2020-04-02 23:38:50 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:38:50 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:39:21 ERROR ua.java.lab [main] I/O error: D:\JC\learnExamples\Diamond fund\lab\mvc\Gems.xml (Системе не удается найти указанный путь)
+2020-04-02 23:39:22 ERROR ua.java.lab [main] Impossible transform file lab/mvc/Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\Gems.xsl (Не удается найти указанный файл)
+2020-04-02 23:39:22 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:39:22 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:42:07 ERROR ua.java.lab [main] Impossible transform file src/main/ua/java/lab/mvc/Gems.xml : javax.xml.transform.TransformerConfigurationException: D:\JC\learnExamples\Diamond fund\Gems.xsl (Не удается найти указанный файл)
+2020-04-02 23:42:07 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:42:07 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:45:51 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:45:51 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:47:22 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+
+2020-04-02 23:47:22 ERROR ua.java.lab [main] JAXB-контекст ошибочен com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 1 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "gems"
+	this problem is related to the following location:
+		at public java.util.ArrayList lab.mvc.Gems.getGems()
+		at lab.mvc.Gems
+	this problem is related to the following location:
+		at java.util.ArrayList lab.mvc.Gems.gems
+		at lab.mvc.Gems
+

@@ -1,3 +1,11 @@
+package lab.mvc;
+
+import lab.marshaller.MarshallGems;
+import lab.marshaller.UnMarshalGems;
+import lab.sax_builder.GemsSAXBuilder;
+import lab.sax_validator.ValidatorSAX;
+import lab.xsl_transform.XSLTransform;
+
 public class Controller {
 View view;
 Model model;
@@ -21,9 +29,17 @@ Model model;
         }else {
             view.printMessage(View.TRANSFORM_FAIL);
         }
-
-
-
-
+        view.printMessage(View.MARSHALL);
+        if(MarshallGems.marshal()){
+            view.printMessage(View.CREATE_SUCCESS);
+        }else {
+            view.printMessage(View.CREATE_FAIL);
+        }
+        view.printMessage(View.UNMARSHAL);
+        if (UnMarshalGems.unmarshal()){
+            view.printMessage(View.UNMARSHAL_SUCCESS);
+        }else {
+            view.printMessage(View.UNMARSHAL_FAIL);
+        }
     }
 }

@@ -1,3 +1,7 @@
+package lab.sax_builder;
+
+import lab.mvc.Gem;
+import lab.mvc.Visual;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -65,8 +69,11 @@ public class GemsHandler extends DefaultHandler {
                 case CUT:
                     visual.setCut(Integer.parseInt(s));
                     break;
+                case VISUAL:
+                    break;
                 case CARAT:
                     current.setCarat(Integer.parseInt(s));
+                    break;
             }
         }
         currentEnum = null;
