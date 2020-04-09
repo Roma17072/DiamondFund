@@ -1,7 +1,9 @@
 package lab.sax_builder;
 
-
+import lab.mvc.Command;
 import lab.mvc.Gem;
+import lab.mvc.GlobalConst;
+import lab.mvc.View;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.SAXException;
@@ -14,9 +16,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class GemsSAXBuilder extends DefaultHandler {
+public class GemsSAXBuilder extends DefaultHandler implements Command {
 
-    public static ArrayList<Gem> gemsSAXBuilder(String filename) {
+    public ArrayList<Gem> gemsSAXBuilder(String filename) {
         Logger logger = LogManager.getLogger("ua.java.lab");
         SAXParserFactory factory = SAXParserFactory.newInstance();
         factory.setNamespaceAware(true);
@@ -34,15 +36,13 @@ public class GemsSAXBuilder extends DefaultHandler {
             logger.error("I/O error: " + e.getMessage());
         }
 
-        class GemComparator implements Comparator<Gem> {
-            @Override
-            public int compare(Gem o1, Gem o2) {
-                return Integer.compare(o2.getCarat(), o1.getCarat());
-            }
-        }
-
-        GemComparator gemComparator = new GemComparator();
-        gems.sort(gemComparator);
+        gems.sort((Gem o1 , Gem o2)->Integer.compare(o2.getCarat(), o1.getCarat()));
         return gems;
+    }
+
+    @Override
+    public void execute() {
+        View.printMessage(View.BUILD_GEM);
+        View.printResult(gemsSAXBuilder(GlobalConst.FILENAME));
     }
 }

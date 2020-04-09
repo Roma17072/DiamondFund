@@ -1,11 +1,8 @@
 package lab.marshaller;
 
-import lab.mvc.Gem;
-import lab.mvc.Gems;
-import lab.mvc.Visual;
+import lab.mvc.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -14,8 +11,8 @@ import java.io.FileOutputStream;
 
 
 
-public class MarshallGems {
-    public static boolean marshal () {
+public class MarshallGems implements Command {
+    public boolean marshal () {
         Logger logger = LogManager.getLogger("ua.java.lab");
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Gems.class);
@@ -36,7 +33,7 @@ public class MarshallGems {
                 }
             };
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
-            jaxbMarshaller.marshal(gems, new FileOutputStream("Gems_marsh.xml"));
+            jaxbMarshaller.marshal(gems, new FileOutputStream(GlobalConst.GEM_MARSH));
             jaxbMarshaller.marshal(gems, System.out);
             return true;
         } catch (FileNotFoundException e) {
@@ -45,6 +42,16 @@ public class MarshallGems {
         } catch (JAXBException e) {
             logger.error("JAXB-error " + e);
             return false;
+        }
+    }
+
+    @Override
+    public void execute() {
+        View.printMessage(View.MARSHALL);
+        if(marshal()){
+            View.printMessage(View.CREATE_SUCCESS);
+        }else {
+            View.printMessage(View.CREATE_FAIL);
         }
     }
 }

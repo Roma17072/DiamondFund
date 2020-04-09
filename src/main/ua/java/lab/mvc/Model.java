@@ -1,14 +1,18 @@
 package lab.mvc;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Model {
-    private String filename = "src/main/ua/java/lab/mvc/Gems.xml";
-    private String schemaname = "src/main/ua/java/lab/sax_validator/Gems.xsd";
+    private Map<Integer,Command> command = new HashMap<>();
+    int i = 0;
 
-    public String getFilename() {
-        return filename;
+    public void setCommand(Command command){
+        this.command.put(++i, command);
     }
 
-    public String getSchemaname() {
-        return schemaname;
+    public void start (int i){
+        command.get(i).execute();
     }
+
 }

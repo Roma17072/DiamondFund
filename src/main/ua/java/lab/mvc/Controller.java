@@ -5,41 +5,52 @@ import lab.marshaller.UnMarshalGems;
 import lab.sax_builder.GemsSAXBuilder;
 import lab.sax_validator.ValidatorSAX;
 import lab.xsl_transform.XSLTransform;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Controller {
-View view;
-Model model;
+    Model model;
+    Logger logger = LogManager.getLogger("ua.java.lab");
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    public Controller(View view, Model model) {
-        this.view = view;
+    public Controller(Model model) {
         this.model = model;
+        setCommands();
     }
+
     public void process(){
-        view.printMessage(View.CHECK_VALID);
-        if(ValidatorSAX.validate(model.getFilename(), model.getSchemaname())) {
-            view.printMessage(View.VALID);
-        }else {
-            view.printMessage(View.NOT_VALID);
-        }
-        view.printMessage(View.BUILD_GEM);
-        view.printResult(GemsSAXBuilder.gemsSAXBuilder(model.getFilename()));
-        view.printMessage(View.TRANSFORM_XML);
-        if(XSLTransform.XSLTransform(model.getFilename())) {
-            view.printMessage(View.TRANSFORM_COMPLETE);
-        }else {
-            view.printMessage(View.TRANSFORM_FAIL);
-        }
-        view.printMessage(View.MARSHALL);
-        if(MarshallGems.marshal()){
-            view.printMessage(View.CREATE_SUCCESS);
-        }else {
-            view.printMessage(View.CREATE_FAIL);
-        }
-        view.printMessage(View.UNMARSHAL);
-        if (UnMarshalGems.unmarshal()){
-            view.printMessage(View.UNMARSHAL_SUCCESS);
-        }else {
-            view.printMessage(View.UNMARSHAL_FAIL);
-        }
+        View.printMessage(View.MENU);
+        model.start(check(br));
+        process();
     }
+
+    public void setCommands(){
+        model.setCommand(new ValidatorSAX());
+        model.setCommand(new GemsSAXBuilder());
+        model.setCommand(new XSLTransform());
+        model.setCommand(new MarshallGems());
+        model.setCommand(new UnMarshalGems());
+    }
+    public int check(BufferedReader br) {
+        int value = 0;
+        do {
+            try {
+                value = Integer.parseInt(br.readLine());
+                if (value > 5 || value < 0){
+                    logger.info("Input value more on less then limit",value);
+                    value = 0;
+                    View.printMessage(View.WRONG);
+                }
+            } catch (NumberFormatException | IOException e) {
+                View.printMessage(View.WRONG);
+                logger.error("Wrong input format ",e);
+            }
+        }while (value == 0);
+        return value;
+    }
+
 }
